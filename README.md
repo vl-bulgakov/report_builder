@@ -2,11 +2,13 @@ English version:
 
 The task is implemented as a microservice (worker + database) that takes a specific type of input file and constructs interactive tables and graphs using Dash, which you can open in your web browser.
 
-Deployment is done by running a command in the terminal from the "report_app" directory (the data file claims_sample_data.csv is already located in the "app/src/" directory): 
-Command "docker compose up -d" and press Enter.
+Deployment is done by running a command in the terminal from the "report_builder-main" directory (the data file claims_sample_data.csv is already located in the "app/src/" directory): 
+    
+    Command "docker compose up -d" and press Enter.
 
 An example of how it should look in the command line: 
-...\Desktop\Test\Medicine\report_app> docker compose up -d
+
+    ...\Desktop\Test\Medicine\report_builder-main> docker compose up -d
 
 You can view the generated dashboard in your browser after launching all containers and services (note that it might take at least 10 seconds after launching the "app" container, as there is a timer in place to ensure all database structures have been properly set up).
 
@@ -34,11 +36,14 @@ Russian version:
 
 Развертывание происходит командой в терминале из директории report_app (файл с данными claims_sample_data.csv уже лежит в директории app/src/): 
 Напишите
-docker compose up -d
+
+    docker compose up -d
+    
 И нажмите Enter
 
 Пример, как должно выглядеть в командной строке:
-...\Desktop\Тестовые\Medicine\report_app> docker compose up -d
+
+    ...\Desktop\Тестовые\Medicine\report_app> docker compose up -d
 
 Посмотреть построенный дашборд вы можете в браузере после запуска всех контейнеров и сервисов (учтите, что не ранее 10 секунд после запуска контейнера app, так как стоит таймер на случай, если не все структуры в базе данных успели равернуться)
 
