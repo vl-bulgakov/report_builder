@@ -1,0 +1,8 @@
+pandas
+sqlalchemy
+dash
+dash-bootstrap-components
+psycopg2==2.9.6
+Path==16.5.0
+python-decouple
+Flask
